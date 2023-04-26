@@ -1,0 +1,338 @@
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    /* animation: App-logo-spin infinite 20s linear; */
+  }
+}
+
+body {
+  background-color: #2a3375;
+  margin: 0; /* This is added to remove the default margin added by the browser */
+}
+
+
+.App-header {
+  background-color: #2a3375;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  position: relative; /* Add this property to make the header a positioned element */
+}
+
+#signInDiv {
+  position: absolute; /* Position the login button absolutely within the header */
+  top: 1rem; /* Position the login button 1rem from the top */
+  right: 1rem; /* Position the login button 1rem from the right */
+}
+
+.signOut-button {
+  position: absolute;
+  top: 63px;
+  right: 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.signOut-button:hover {
+  transform: scale(1.1);
+  background-color: white;
+  color: #2a3375;
+  cursor: pointer;
+}
+
+.orderNow-button {
+  position: absolute;
+  top: 10px;
+  right: 330px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.orderNow-button:hover {
+  transform: scale(1.1);
+  background-color: white;
+  color: #2a3375;
+  cursor: pointer;
+}
+
+.displayUser {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  font-size: 20px;
+  padding: 10px 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.displayUser:hover {
+  transform: scale(1.1);
+  background-color: white;
+  color: #2a3375;
+}
+
+
+
+.displayUser h4 {
+  font-weight: normal;
+}
+
+.App-logo {
+  max-height: 40vmin;
+  pointer-events: none;
+  position: absolute;
+  top: 250px;
+  left: 0px;
+}
+
+.App-logo-small {
+  max-height: 10vmin;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.Food-one {
+  max-height: 40vmin;
+  position: absolute;
+  top: 130px;
+  left: 700px;
+  border-radius: 20px;
+  transition: transform 0.3s ease; /* Add a transition for smooth scaling */
+}
+
+.Food-one:hover {
+  transform: scale(1.05); /* Adjust this value for your desired growth size */
+}
+
+.Food-one-off {
+  max-height: 10vmin;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.Food-two {
+  max-height: 40vmin;
+  position: absolute;
+  top: 130px;
+  left: 1200px;
+  border-radius: 20px;
+  transition: transform 0.3s ease; /* Add a transition for smooth scaling */
+}
+
+.Food-two:hover {
+  transform: scale(1.05); /* Adjust this value for your desired growth size */
+}
+
+
+.Food-two-off {
+  max-height: 10vmin;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+.Food-three {
+  max-height: 40vmin;
+  position: absolute;
+  top: 550px;
+  left: 770px;
+  border-radius: 20px;
+  transition: transform 0.3s ease; /* Add a transition for smooth scaling */
+}
+
+.Food-three:hover {
+  transform: scale(1.05); /* Adjust this value for your desired growth size */
+}
+
+
+.Food-three-off {
+  max-height: 10vmin;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: none;
+}
+
+
+.menu-Food-One {
+  max-height: 40vmin;
+  position: absolute;
+  top: 230px;
+  left: 270px;
+  border-radius: 20px;
+  transition: transform 0.3s ease; /* Add a transition for smooth scaling */
+}
+
+.menu-Food-One:hover {
+  transform: scale(1.05); /* Adjust this value for your desired growth size */
+}
+
+.menu-Food-Two {
+  max-height: 40vmin;
+  position: absolute;
+  top: 230px;
+  left: 570px;
+  border-radius: 20px;
+  transition: transform 0.3s ease; /* Add a transition for smooth scaling */
+}
+
+.menu-Food-Two:hover {
+  transform: scale(1.05); /* Adjust this value for your desired growth size */
+}
+
+.menu-Food-Three {
+  max-height: 40vmin;
+  position: absolute;
+  top: 230px;
+  left: 820px;
+  border-radius: 20px;
+  transition: transform 0.3s ease; /* Add a transition for smooth scaling */
+}
+
+.menu-Food-Three:hover {
+  transform: scale(1.05); /* Adjust this value for your desired growth size */
+}
+
+.menu-Food-Four {
+  max-height: 40vmin;
+  position: absolute;
+  top: 230px;
+  left: 1155px;
+  border-radius: 20px;
+  transition: transform 0.3s ease; /* Add a transition for smooth scaling */
+}
+
+.menu-Food-Four:hover {
+  transform: scale(1.05); /* Adjust this value for your desired growth size */
+}
+
+.menu-Food-Five {
+  max-height: 30vmin;
+  position: absolute;
+  top: 630px;
+  left: 450px;
+  border-radius: 20px;
+  transition: transform 0.3s ease; /* Add a transition for smooth scaling */
+}
+
+.menu-Food-Five:hover {
+  transform: scale(1.05); /* Adjust this value for your desired growth size */
+}
+
+.menu-Drink {
+  max-height: 30vmin;
+  position: absolute;
+  top: 630px;
+  left: 750px;
+  border-radius: 20px;
+  transition: transform 0.3s ease; /* Add a transition for smooth scaling */
+}
+
+.menu-Drink:hover {
+  transform: scale(1.05); /* Adjust this value for your desired growth size */
+}
+
+.menu-Food-Six {
+  max-height: 30vmin;
+  position: absolute;
+  top: 630px;
+  left: 912px;
+  border-radius: 20px;
+  transition: transform 0.3s ease; /* Add a transition for smooth scaling */
+}
+
+.menu-Food-Six:hover {
+  transform: scale(1.05); /* Adjust this value for your desired growth size */
+}
+
+
+
+.logo-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.menuNow-button {
+  position: absolute;
+  top: 110px;
+  right: 700px;
+  background-color: transparent;
+  border: 2px solid white;
+  border-radius: 20px;
+  color: white;
+  font-size: 60px;
+  padding: 10px 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.menuNow-button:hover {
+  background-color: white;
+  color: #2a3375;
+}
+
+.text-over-image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.text-over-image {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.modal {
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 4px;
+  max-width: 80%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
